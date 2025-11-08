@@ -1,0 +1,13 @@
+# 🛑 Dependencies/Output yang Dihasilkan
+# Abaikan folder node_modules secara umum
+node_modules/
+
+# Abaikan log npm (sering muncul jika ada error)
+npm-debug.log
+.npm/
+
+# Abaikan hasil build lokal atau cache
+.vscode/
+
+
+.env

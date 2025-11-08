@@ -1,0 +1,41 @@
+%flex {
+  display: flex;
+}
+
+%hide {
+  display: none;
+}
+
+%grid {
+  display: grid;
+}
+
+%block {
+  display: block;
+}
+
+%image {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+%svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+%circle {
+  border-radius: 100px;
+}
+
+%center {
+  
+}
+
+%sticky {
+  align-self: flex-start;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 1.5rem;
+}
