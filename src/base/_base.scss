@@ -1,0 +1,72 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts' as a;
+
+html,
+body {
+  font-family: v.$font-family;
+  font-size: v.$font-size;
+  font-weight: v.$font-weight;
+  line-height: v.$line-height;
+  @include a.transition(background-color .3s ease, color .3s ease)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-wrap: anywhere;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+  @include a.transition(all .3s ease); 
+}
+
+a,
+button,
+details,
+summary,
+input,
+select {
+  border: none;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Google Sans Text', Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.75rem;
+  @extend %colorTransition;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+b,
+strong,
+.b {
+  @extend %bold;
+}
+
+.f {
+  @extend %flex;
+}
+
+.g {
+  @extend %grid;
+}
+
+.h {
+  @extend %hide;
+}
+
+.s {
+  @extend %sticky;
+}
