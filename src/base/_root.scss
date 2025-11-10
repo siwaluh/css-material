@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as *;
+
+:root {
+  --bodyText: #{$bodyText};
+  --bodyBg: #{$bodyBg};
+  --postText: #{$postText};
+}
+
+[data-theme=dark] {
+  --bodyText: #{$bodyTextDark};
+  --bodyBg: #{$bodyBgDark};
+  --postText: #{$postTextDark};
+}

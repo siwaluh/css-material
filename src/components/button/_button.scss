@@ -1,0 +1,19 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts' as *;
+
+button {
+  @extend %clearFormChild;
+  @extend %allTransition;
+  @extend %bs-none;
+  @extend %br7;
+  cursor: pointer;
+  padding: .75rem 1.25rem;
+  background-color: $primary;
+  color: $invert;
+  font-size: inherit;
+  font-weight: 500;
+
+  &:hover {
+    box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, .15);
+  }
+}

@@ -1,6 +1,10 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts' as a;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: v.$font-family;
@@ -18,39 +22,6 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-a {
-  text-decoration: none;
-  @include a.transition(all .3s ease); 
-}
-
-a,
-button,
-details,
-summary,
-input,
-select {
-  border: none;
-  outline: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Google Sans Text', Arial, Helvetica, sans-serif;
-  margin: 0;
-  line-height: 1.75rem;
-  @extend %colorTransition;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-b,
-strong,
 .b {
   @extend %bold;
 }

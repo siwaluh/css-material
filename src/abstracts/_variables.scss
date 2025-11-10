@@ -6,6 +6,21 @@ $line-height: 1.5rem;
 
 //Color
 $primary: purple !default;
+$invert: #fff !default;
+
+//TextColor
+$bodyText: #5c7099 !default;
+$bodyTextDark: #77828d !default;
+$postText: #3a4a68 !default;
+$postTextDark: #9dafbd !default;
+
+
+//BackgroundColor
+$bodyBg: #f6f6f9 !default;
+$bodyBgDark: #15202b !default;
+$postBg: #fefefe !default;
+$postBgDark: #1c2834 !default;
+$bgShadow: #f0f1f5;
+$bgShadowDark: #213040;
 
 $gap: 3rem !default;
-

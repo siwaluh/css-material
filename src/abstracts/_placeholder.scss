@@ -22,7 +22,7 @@
   object-fit: cover;
 }
 
-%svg {
+%iconSize {
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -31,8 +31,29 @@
   border-radius: 100px;
 }
 
+%clearFormChild {
+  border: none;
+  outline: none;
+}
+
+%bs-none {
+  box-shadow: none;
+}
+
+%br7 {
+  border-radius: 7px;
+}
+
 %bold {
   font-weight: 700;
+}
+
+%breakPage {
+  margin: 2rem 0;
+}
+
+%breakTitle {
+  margin: 2rem 0 1rem;
 }
 
 %sticky {
@@ -51,5 +72,22 @@
 }
 
 %colorTransition {
-  @include transition(color .3s ease);
+  @include transition(color 0.3s ease);
+}
+
+%allTransition {
+  @include transition(all 0.3s);
+}
+
+%boxIcon {
+  background: {
+    repeat: no-repeat;
+    size: 1.25rem;
+    size: clamp(1.35rem, calc(1.2315rem + 0.5185vw), 1.25rem);
+    position: left 1rem top 1rem;
+    position: left clamp(1.15rem, calc(1.0648rem + -0.0648vw), 1rem) top 1em;
+  }
+  color: #3a4a68;
+  padding-left: clamp(3.25rem, calc(3.1019rem + 0.6481vw), 3rem);
+  position: relative;
 }

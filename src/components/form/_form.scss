@@ -1,0 +1,32 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts' as *;
+
+.input-group {
+  margin-bottom: 15px;
+
+  label {
+    @extend %block;
+    @extend %bold;
+    margin-bottom: 8px;
+  }
+
+  input,
+  textarea,
+  select {
+    @extend %br7;
+    @extend %allTransition;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid $bodyText;
+  }
+}
+
+.input-row {
+  @extend %flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  > * {
+    flex: 1 0 auto;
+  }
+}
