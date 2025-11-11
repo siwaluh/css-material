@@ -1,3 +1,23 @@
-@mixin transition($x...){
+@mixin transition($x...) {
   transition: $x;
+}
+
+@mixin animation($x) {
+  -webkit-animation: $x;
+  -moz-animation: $x;
+  animation: $x;
+}
+
+@mixin keyframes($x) {
+  @-webkit-keyframes #{$x} {
+    @content;
+  }
+
+  @-moz-keyframes #{$x} {
+    @content;
+  }
+  
+  @keyframes #{$x} {
+    @content;
+  }
 }

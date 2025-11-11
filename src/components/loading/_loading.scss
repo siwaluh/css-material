@@ -1,0 +1,20 @@
+@use '../../abstracts/variables' as *;
+@use '../../abstracts' as *;
+
+.loading {
+  @extend %flex;
+  @extend %jc-c;
+  @extend %al-c;
+  cursor: progress;
+  margin: 1rem;
+
+  svg {
+    @extend %animateCircle;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  path {
+    stroke: $primary;
+  }
+}

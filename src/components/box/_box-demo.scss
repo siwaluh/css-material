@@ -3,8 +3,8 @@
 
 .box-demo {
   @extend %flex;
-  justify-content: center;
-  align-items: center;
+  @extend %jc-c;
+  @extend %al-c;
   min-height: 100vh;
   padding: 20px;
 

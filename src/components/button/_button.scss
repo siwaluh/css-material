@@ -2,7 +2,7 @@
 @use '../../abstracts' as *;
 
 button {
-  @extend %clearFormChild;
+  @extend %bo-n;
   @extend %allTransition;
   @extend %bs-none;
   @extend %br7;
@@ -15,5 +15,9 @@ button {
 
   &:hover {
     box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, .15);
+  }
+
+  &:disabled {
+    @extend %cursorDisabled;
   }
 }

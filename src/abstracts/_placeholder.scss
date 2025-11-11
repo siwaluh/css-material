@@ -31,9 +31,21 @@
   border-radius: 100px;
 }
 
-%clearFormChild {
+%bo-n {
   border: none;
   outline: none;
+}
+
+%jc-c {
+  justify-content: center;
+}
+
+%jc-sb {
+  justify-content: space-between;
+}
+
+%al-c {
+align-items: center;
 }
 
 %bs-none {
@@ -46,6 +58,11 @@
 
 %bold {
   font-weight: 700;
+}
+
+%mp-r {
+  margin: 0;
+  padding: 0;
 }
 
 %breakPage {
@@ -71,6 +88,10 @@
   -webkit-user-select: none;
 }
 
+%cursorDisabled {
+  cursor: not-allowed;
+}
+
 %colorTransition {
   @include transition(color 0.3s ease);
 }
@@ -90,4 +111,8 @@
   color: #3a4a68;
   padding-left: clamp(3.25rem, calc(3.1019rem + 0.6481vw), 3rem);
   position: relative;
+}
+
+%animateCircle {
+  @include animation(putar 1s linear infinite normal);
 }

@@ -1,5 +1,9 @@
 @use '../../abstracts' as *;
 
 input {
-  @extend %clearFormChild;
+  @extend %bo-n;
+  
+  &:disabled {
+    @extend %cursorDisabled;
+  }
 }

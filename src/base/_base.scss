@@ -15,8 +15,7 @@ body {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  @extend %mp-r;
   overflow-x: hidden;
   overflow-wrap: anywhere;
   text-rendering: optimizeLegibility;
