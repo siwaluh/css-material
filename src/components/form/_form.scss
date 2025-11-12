@@ -30,3 +30,26 @@
     flex: 1 0 auto;
   }
 }
+
+.radio-group {
+  @extend %flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  > [type=radio] {
+    @extend %hide;
+
+    label {
+      padding: 20px;  
+    }
+
+    &:checked + label {
+      background-color: $primary;
+      color: $invert;
+    }
+  }
+}
