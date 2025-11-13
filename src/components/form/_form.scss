@@ -1,7 +1,17 @@
 @use '../../abstracts/variables' as *;
 @use '../../abstracts' as *;
 
-.input-group {
+input,
+select,
+textarea {
+  @extend %bo-n;
+
+  &:disabled {
+    @extend %cursorDisabled;
+  }
+}
+
+.form-group {
   margin-bottom: 15px;
 
   label {
@@ -21,7 +31,7 @@
   }
 }
 
-.input-row {
+.form-row {
   @extend %flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -40,16 +50,18 @@
     flex-direction: column;
   }
 
-  > [type=radio] {
-    @extend %hide;
+  .radio-item {
+    [type='radio'] {
+      @extend %hide;
 
-    label {
-      padding: 20px;  
-    }
+      label {
+        padding: 20px;
+      }
 
-    &:checked + label {
-      background-color: $primary;
-      color: $invert;
+      &:checked + label {
+        background-color: $primary;
+        color: $invert;
+      }
     }
   }
 }
